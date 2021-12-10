@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>javascript</title>
+  </head>
+    <body>
+      <div class="wrapper">
+        <div class="container">
+          <header class="heading">
+            <h1 class="global--heading">Pig game</h1>
+            <h6 class="global-text">Two player roll the dice, If the dice was 1, your current score will lost so be careful. Who roll to 100 first will be the winner</h6>
+          </header>
+          <div class="player">
+
+            <div class="player-side" id="player-1">
+              <h3 class="player-name global-heading">Player 1</h3>
+              <h1 class="player-score" id="player1score">0</h1>
+              <div class="player-current-score">
+                <h3 class="player-current">Current</h3>
+                <h1 class="player-current--score" id="player1current">0</h1>
+              </div>
+            </div>
+
+            <div class="player-side" id="player-2">
+              <h3 class="player-name global-heading">Player 2</h3>
+              <h1 class="player-score" id="player2score">0</h1>
+              <div class="player-current-score">
+                <h3 class="player-current">Current</h3>
+                <h1 class="player-current--score" id="player2current">0</h1>
+              </div>
+            </div>
+
+            <div class="overlay">
+              <button class="new-game button button--primary">New Game</button>
+
+              <div class="dice">?</div>
+
+              <button class="roll-dice button button--primary">Roll Dice</button>
+              <button class="hold button button--primary">Hold</button>
+            </div>
+            <div class="hidden" id="popup">Player 1 Win</div>
+          </div>
+        </div>
+        
+      </div>  
+          <script src="./scripts/newScript.js"></script>
+    </body>
+</html>
